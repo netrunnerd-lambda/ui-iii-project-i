@@ -64,3 +64,107 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+	margin: 26px auto;
+	width: 876px;
+}
+
+/*header {
+	height: 565px;
+}*/
+
+.header-nav a {
+	border-radius: 3px;
+	color: #b9b9b9;
+	font-size: 15px;
+	padding: 2px 5px;
+	margin: 25px;
+	text-decoration: none;
+	transition: all 0.5s;
+}
+
+.header-nav a:hover {
+	background-color: black;
+	color: white;
+}
+
+.header-nav a:first-child {
+	margin-left: 0;
+}
+
+.header-nav img {
+	display: inline-block;
+	margin-left: 46px;
+	vertical-align: middle;
+}
+
+.header-box {
+	height: 535px;
+}
+
+.header-box section {
+	display: inline-block;
+	height: 372px;
+	margin-top: 120px;
+	text-align: center;
+	width: 490px;
+	vertical-align: top;
+}
+
+.header-box section h2 {
+	font-size: 5em;
+}
+
+.header-box section a {
+	border: 1px solid black;
+	border-radius: 3px;
+	color: black;
+	padding: 2px 40px;
+	text-decoration: none;
+	transition: all 0.5s;
+}
+
+.header-box section a:hover {
+	background-color: black;
+	color: white;
+}
+
+.header-box img {
+	margin-top: 70px;
+}
+
+main {
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	margin-bottom: 40px;
+	padding: 40px 0 40px;
+}
+
+main img {
+	margin: 40px 0 40px;
+}
+
+.main-content section {
+	display: inline-block;
+	margin-left: 12px;
+	width: 280px;
+}
+
+.main-content:first-child section {
+	width: 430px;
+}
+
+.main-content section:first-child {
+	margin: 0;
+}
+
+.main-content section p {
+	line-height: 1.25em;
+}
+
+.copyright {
+	font-size: 13px;
+	margin: 50px 0 115px;
+	text-align: center;
+}
