@@ -65,8 +65,21 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+a {
+	border-radius: 3px;
+	color: black;
+	text-decoration: none;
+	transition: all 0.5s;
+}
+
+a:hover {
+	background-color: black;
+	color: white;
+}
+
 .container {
 	margin: 25px auto;
+	overflow: hidden;
 	width: 876px;
 }
 
@@ -88,23 +101,14 @@ h1, h2, h3, h4, h5 {
 
 .header-nav a {
 	border-radius: 3px;
-	color: darkgray;
 	font-size: 15px;
 	margin: 0 25px;
 	padding: 4px 6px;
-	text-decoration: none;
-	transition: all 0.5s;
 }
 
-.header-nav a:first-child {
+.header-nav a:first-child,
+.main-content section:first-child {
 	margin-left: 0;
-}
-
-.header-nav a:hover,
-.header-content .get-started a:hover,
-.service a:hover {
-	background-color: black;
-	color: white;
 }
 
 .header-nav a:last-child,
@@ -122,23 +126,26 @@ h1, h2, h3, h4, h5 {
 	min-width: 379px;
 }
 
-.header-content .get-started {
+.header-content .get-started,
+.services-info-facts {
 	width: 75%;
 }
 
-.header-content .get-started a {
+.header-content .get-started a,
+.service, .service a {
 	border: 1px solid black;
-	color: inherit;
+}
+
+.header-content .get-started a {
 	padding: 4px 50px;
-	text-decoration: none;
-	transition: all 0.5s;
 }
 
 .header-content .get-started h2 {
 	font-size: 5em;
 }
 
-.header-services {
+.header-services,
+.middle-img {
 	margin: 40px 0 40px;
 }
 
@@ -147,22 +154,21 @@ h1, h2, h3, h4, h5 {
 }
 
 main {
-	border-bottom: 1px solid black;
-	border-top: 1px solid black;
-	margin-bottom: 40px;
+	border-color: black;
+	border-style: solid;
+	border-width: 1px 0 1px;
 	padding: 40px 0 40px;
+}
+
+main, main .service {
+	margin-bottom: 40px;
 }
 
 .main-content section {
 	margin-left: 15px;
 }
 
-.main-content section:first-child {
-	margin-left: 0;
-}
-
 .middle-img {
-	margin: 40px 0 40px;
 	min-width: 876px;
 }
 
@@ -171,9 +177,28 @@ p {
 }
 
 .services {
-	align-items: center;
-	display: flex;
 	flex-flow: row wrap;
+}
+
+.service {
+	padding: 18px;
+	width: 418px;
+}
+
+.service:nth-child(odd) {
+	margin-right: 40px;
+}
+
+.service:nth-last-child(-n+2) {
+	margin-bottom: 0;
+}
+
+.service a {
+	border-radius: 5px;
+	display: inline-block;
+	font-size: 12px;
+	margin: 20px 0 5px;
+	padding: 10px 40px;
 }
 
 .services-info {
@@ -182,7 +207,6 @@ p {
 
 .services-info-facts {
 	padding-right: 30px;
-	width: 75%;
 }
 
 .services-info-facts-list {
@@ -195,31 +219,4 @@ p {
 
 .services-info-img {
 	min-width: 420px;
-}
-
-.service {
-	border: 1px solid black;
-	margin-bottom: 40px;
-	padding: 18px;
-	width: 418px;
-}
-
-.service:nth-child(odd) {
-	margin: 0 40px 40px 0;
-}
-
-.service:nth-last-child(-n+2) {
-	margin-bottom: 0;
-}
-
-.service a {
-	border: 1px solid black;
-	border-radius: 5px;
-	display: inline-block;
-	color: inherit;
-	font-size: 12px;
-	margin: 20px 0 5px;
-	padding: 10px 40px;
-	text-decoration: none;
-	transition: all 0.5s;
 }
