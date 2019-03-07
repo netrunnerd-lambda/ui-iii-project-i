@@ -1,4 +1,4 @@
-# User Interface Project II: Great Idea Web Page With Flexbox
+# User Interface III Project I: Great Idea Web Page - Services
 
 Now that you have experienced building a layout using `inline-block`.  Lets revisit the same HTML structure and refactor our first page with flex box module.  If you didn't finish yesterday's assignment, just start from scratch or use the solution code provided to you.
 
@@ -17,12 +17,12 @@ Once you have finished the home page using flex box module, go build the service
 
 ## Objectives
 
-* [ ] Home Page Refactor:
+* [x] Home Page Refactor:
   * Note that the provided HTML is blank.  This is because I want you to use your code from yesterday if possible.  If you didn't finish, that's fine, just use the solution from yesterday
   * Refactor the home page layout with flexbox where `inline-block` was used before.
   * In your navigation elements, point the services `<a href=""></a>` to `services.html`
 
-* [ ] Services Page Build:
+* [x] Services Page Build:
   * Update the title in your newly copied services page to say `Great Idea! - Services`
   * Using the provided [design file](design-files/services-desktop-design.png), create the services page layout using flexbox and box model.
   * Wrap the great idea logo in an anchor tag and point the `href` to `index.html`
